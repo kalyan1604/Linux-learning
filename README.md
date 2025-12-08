@@ -1,59 +1,95 @@
-# Linux-learning
-# 🐧 Linux Learning – Lessons 1 to 7
+# 🐧 Linux Learning 
 
-This repository contains my Linux learning journey from **scratch to scripting**:
-
-- Basic Linux commands  
-- Navigating directories  
-- Creating & deleting files and folders  
-- File permissions  
-- Shell scripting basics  
-- Variables, input, and conditions  
-- Loops and simple automation  
-
-It is designed as a **personal reference** so I can revisit concepts and scripts anytime.
+This repository contains my step-by-step Linux learning journey.  
+Each lesson includes explanations, commands, examples, and small projects to strengthen understanding.  
+The lessons are organized in separate Markdown files for clarity and easy reference.
 
 ---
 
-## 📂 Repository Structure
+## 📚 Lessons Covered (1–15)
 
-```text
-linux-learning/
+### Beginner Level
+1. **Lesson 1 – Introduction to Linux**
+2. **Lesson 2 – Navigating Linux Filesystem**
+3. **Lesson 3 – Working with Files and Directories**
+4. **Lesson 4 – File Permissions (Basic)**
+5. **Lesson 5 – Editing Files (nano & basic scripting)**
+6. **Lesson 6 – Shell Scripting Fundamentals**
+7. **Lesson 7 – Loops and Conditions in Shell Scripts**
+
+### Intermediate Level
+8. **Lesson 8 – Cron Jobs & Automation**
+9. **Lesson 9 – Networking Basics**
+10. **Lesson 10 – Process Management**
+11. **Lesson 11 – Disk Management & Filesystems**
+12. **Lesson 12 – Text Processing (grep, sed, awk)**
+13. **Lesson 13 – Advanced Permissions & Ownership**
+14. **Lesson 14 – Archiving & Compression (tar, gzip, zip)**
+15. **Lesson 15 – Backup Script (important_data folder)**
+
+More lessons will be added as I continue learning Linux.
+
+---
+
+## 📁 Repository Structure
+
+```
+Linux-Learning/
 │
-├── README.md
-├── .gitignore
-├── LICENSE
-├── CONTRIBUTING.md
+├── Lesson 1 – Introduction to Linux.md
+├── Lesson 2 – Navigating Linux Filesystem.md
+├── Lesson 3 – Working with Files and Directories.md
+├── Lesson 4 – File Permissions (Basic).md
+├── Lesson 5 – Editing Files.md
+├── Lesson 6 – Shell Scripting Fundamentals.md
+├── Lesson 7 – Loops and Conditions.md
 │
-├── lesson1-basic-commands/
-│   └── notes.md
+├── Lesson 8 – Cron Jobs & Automation.md
+├── Lesson 9 – Networking Basics.md
+├── Lesson 10 – Process Management.md
+├── Lesson 11 – Disk Management & Filesystems.md
+├── Lesson 12 – Text Processing (grep sed awk).md
+├── Lesson 13 – Advanced Permissions.md
+├── Lesson 14 – Archiving & Compression.md
+├── Lesson 15 – Backup Script (important_data).md
 │
-├── lesson2-navigation/
-│   └── notes.md
-│
-├── lesson3-files-folders/
-│   ├── notes.md
-│   └── sample-files.txt
-│
-├── lesson4-permissions/
-│   └── notes.md
-│
-├── lesson5-first-script/
-│   ├── notes.md
-│   └── hello.sh
-│
-├── lesson6-variables-input-if/
-│   ├── notes.md
-│   ├── greet.sh
-│   ├── ask.sh
-│   └── check.sh
-│
-├── lesson7-loops-automation/
-│   ├── notes.md
-│   ├── loop1.sh
-│   ├── loop2.sh
-│   └── organize.sh
-│
-└── scripts/
-    └── system_info.sh
+└── README.md
+```
+
+---
+
+## 🔧 How to Use This Repository
+
+- Each lesson is self-contained.  
+- Read the file in order for smooth learning.  
+- Practice the commands in a Linux terminal (WSL or Ubuntu).  
+- Scripts can be copied directly into `.sh` files and executed.  
+- Use this repo as a reference during interviews, projects, or revision.
+
+---
+
+## 🚀 Upcoming Lessons (Planned)
+
+- Lesson 16 – Package Management (apt, dpkg)  
+- Lesson 17 – Environment Variables & PATH  
+- Lesson 18 – Advanced Shell Scripting  
+- Lesson 19 – Networking (Advanced)  
+- Lesson 20 – Git Basics  
+- Lesson 21 – User & Group Management  
+- Lesson 22 – Services & systemd  
+- Lesson 23 – Firewall & Security Basics  
+- Lesson 24 – Regular Expressions (Advanced)  
+- Lesson 25 – Storage & Partitions  
+- Lesson 26 – Performance Monitoring  
+- Lesson 27 – SSH, SCP & Remote Access  
+- Lesson 28 – Final Linux Projects  
+
+---
+
+## ✨ Goal
+
+To build a strong Linux foundation with hands-on practice, structured notes, and real-world examples.  
+This repository will continue to grow as my Linux knowledge expands.
+
+---
 
