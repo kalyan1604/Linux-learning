@@ -1,12 +1,12 @@
 # Lesson 8 – Cron Jobs & Automation
 
-Commands:
+## Commands
 - `crontab -e` – open cron editor
 - `crontab -l` – list cron jobs
 - `crontab -r` – remove all cron jobs
 
-Concepts:
-- Cron is a scheduler that runs tasks automatically
+## Concepts
+- Cron is a scheduler that runs commands automatically at specific times.
 - Crontab format:
 
 ```
@@ -19,13 +19,13 @@ Concepts:
 └────────── Minute (0–59)
 ```
 
-Examples:
-- `* * * * * echo "hello"` – runs every minute
-- `0 2 * * * /home/user/script.sh` – runs daily at 2 AM
-- `*/5 * * * * echo "test"` – runs every 5 minutes
+## Examples
+- `* * * * * echo "hello"` – runs every minute  
+- `0 2 * * * /home/user/script.sh` – runs daily at 2 AM  
+- `*/5 * * * * echo "test"` – runs every 5 minutes  
 
-Mini Project:
-Add this entry:
+## Mini Project – Cron Test
+Add this entry in crontab:
 ```
 * * * * * echo "Cron Test: $(date)" >> ~/cron_test.txt
 ```
