@@ -1,0 +1,52 @@
+# Lesson 8 – Cron Jobs & Automation
+
+## What is cron?
+Cron is a Linux scheduler that automatically runs commands at specified times.
+
+## Edit cron jobs
+```
+crontab -e
+```
+
+## Crontab format
+```
+* * * * * command
+│ │ │ │ │
+│ │ │ │ └── Day of week (0–6)
+│ │ │ └──── Month (1–12)
+│ │ └────── Day of month (1–31)
+│ └──────── Hour (0–23)
+└────────── Minute (0–59)
+```
+
+## Examples
+
+### Run every minute
+```
+* * * * * echo "hello" >> ~/cron_test.txt
+```
+
+### Daily at 2 AM
+```
+0 2 * * * /home/user/script.sh
+```
+
+### List cron jobs
+```
+crontab -l
+```
+
+### Remove cron jobs
+```
+crontab -r
+```
+
+## Mini Project – Cron Test
+```
+* * * * * echo "Cron Test: $(date)" >> ~/cron_test.txt
+```
+
+Check output:
+```
+cat ~/cron_test.txt
+```
