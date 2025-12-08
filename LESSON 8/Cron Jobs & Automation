@@ -1,14 +1,14 @@
 # Lesson 8 – Cron Jobs & Automation
 
-## What is cron?
-Cron is a Linux scheduler that automatically runs commands at specified times.
+Commands:
+- `crontab -e` – open cron editor
+- `crontab -l` – list cron jobs
+- `crontab -r` – remove all cron jobs
 
-## Edit cron jobs
-```
-crontab -e
-```
+Concepts:
+- Cron is a scheduler that runs tasks automatically
+- Crontab format:
 
-## Crontab format
 ```
 * * * * * command
 │ │ │ │ │
@@ -19,29 +19,13 @@ crontab -e
 └────────── Minute (0–59)
 ```
 
-## Examples
+Examples:
+- `* * * * * echo "hello"` – runs every minute
+- `0 2 * * * /home/user/script.sh` – runs daily at 2 AM
+- `*/5 * * * * echo "test"` – runs every 5 minutes
 
-### Run every minute
-```
-* * * * * echo "hello" >> ~/cron_test.txt
-```
-
-### Daily at 2 AM
-```
-0 2 * * * /home/user/script.sh
-```
-
-### List cron jobs
-```
-crontab -l
-```
-
-### Remove cron jobs
-```
-crontab -r
-```
-
-## Mini Project – Cron Test
+Mini Project:
+Add this entry:
 ```
 * * * * * echo "Cron Test: $(date)" >> ~/cron_test.txt
 ```
